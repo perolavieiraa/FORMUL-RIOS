@@ -1,0 +1,34 @@
+body {
+    background-color: #c6ddf0;
+}
+
+h1 {
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    width: 500px;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dogs {
+    width: 300px;
+}
+
+footer {
+text-align: center;
+background-color: #78ade66b;
+padding: 15px;
+margin-top: 20px;
+}
