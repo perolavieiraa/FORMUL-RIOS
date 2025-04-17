@@ -1,13 +1,19 @@
-document.getElementById('formulario').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nome = document.getElementById('nome').value.trim();
-    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-    if (nome === "") {
-      alert("Insira um nome válido");
-    } else if (!regex.test(nome)) {
-      alert("Insira um nome válido");
-    } else {
-      alert("Tudo certo!");
+document.getElementById('formulario').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const campos = [
+    "nome", "cpf", "rg", "data_nascimento", "sexo", "telefone", "email", "endereco", "numero", "bairro", "cidade", "estado", "cep", "profissao", "contato_alternativo",
+    "nome_pet", "especie", "raca", "sexo_pet", "data_nasc_pet", "cor", "porte", "peso", "pelagem", "alimentacao", "frequencia", "veterinario", "ultima_visita", "historico", "comportamento"
+  ];
+
+  for (let id of campos) {
+    const campo = document.getElementById(id);
+    if (!campo.value.trim()) {
+      alert("O campo \"" + campo.previousElementSibling.textContent + "\" é obrigatório.");
+      campo.focus();
+      return;
     }
-  });
-  
+  }
+
+  alert("Tudo certo!");
+});

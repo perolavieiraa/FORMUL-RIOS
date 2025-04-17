@@ -1,34 +1,60 @@
 body {
     background-color: #c6ddf0;
-}
-
-h1 {
-   text-align: center;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-hr {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  hr {
     width: 500px;
-}
-
-section {
+  }
+  
+  section {
     background: white;
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#dogs {
+  }
+  
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    margin-top: 4px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #dogs {
     width: 300px;
-}
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #78ade66b;
+    padding: 15px;
+    margin-top: 20px;
+  }
 
-footer {
-text-align: center;
-background-color: #78ade66b;
-padding: 15px;
-margin-top: 20px;
-}
+  #sapo {
+    width: 265px;
+  }
